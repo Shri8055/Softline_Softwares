@@ -98,10 +98,12 @@ li > img {
     justify-content: end;
     background: none;
     margin-left: 150px;
+    transition: .3s;
 }
 
 .inr-li > a {
     background: none;
+    transition: .3s;
 }
 
 .container {
@@ -659,6 +661,17 @@ iframe{
         width: 200px;
     }
 }
+@media only screen and (max-width: 1650px),
+       only screen and (max-width: 950px){
+            .diagonal-section-p{
+                text-align: center;
+            }
+            .diagonal-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+       }
 @media only screen and (max-width: 600px){
     h1{
         font-size: 2rem;
@@ -680,7 +693,7 @@ iframe{
         margin: auto;
         width: 75%;
         margin-top: 40px;
-        text-align: center;
+        text-align: left;
     }
     .diagonal-section > img{
         padding-top: 30px;
@@ -688,7 +701,9 @@ iframe{
         width: 200px;
     }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 1650px),
+       only screen and (max-width: 950px),
+       only screen and (max-width: 600px) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -851,11 +866,13 @@ textarea {
         width: max-content;
         z-index: 99999999;
         backdrop-filter: blur(10px);
+        transition: .3s;
     }
 
     .inr-li a {
         margin: 8px 0;
         text-align: center;
+        transition: .3s;
     }
 
     .hamburger {
@@ -876,7 +893,7 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 55%;
         padding: 0;
     }
 }
